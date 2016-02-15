@@ -157,14 +157,20 @@ function main() { // notre fonction principale, nous permet de lancer notre jeu
                 
                 // 1er cas : jeu fini car un joueur a gagné
                 if(jeuEstFini){
-                    affiche.envoiMessage("Joueur " + joueurs[currentTurn] + " a gagné !  " + "  <a href=tictactoe.html>Rejouer</a>");
+                    // affiche.envoiMessage("Joueur " + joueurs[currentTurn] + " a gagné !  " + "  <a href=tictactoe.html>Rejouer</a>");
+                    // version pour le lien (généré par htmlpreview.github.io) présent sur le README.md sur github pour que l'actualisation de la page marche
+                    affiche.envoiMessage("Joueur " + joueurs[currentTurn] + " a gagné !  " + "  <a href=http://htmlpreview.github.io/?https://github.com/ouskah/Jeu_Tic-Tac-Toe/blob/master/tictactoe.html>Rejouer</a>");
+                    
                     return;
                 }
                 
                 // 2eme cas : jeu est fini car Match nul
                 if(tableauEstRempli(pions)){
                     
-                    affiche.envoiMessage("Match nul !!!  " + "  <a href=tictactoe.html>Rejouer</a>");
+                    // affiche.envoiMessage("Match nul !!!  " + "  <a href=tictactoe.html>Rejouer</a>");
+                    // version pour le lien (généré par htmlpreview.github.io) présent sur le README.md sur github pour que l'actualisation de la page marche
+                    affiche.envoiMessage("Match nul !!!  " + "  <a href=http://htmlpreview.github.io/?https://github.com/ouskah/Jeu_Tic-Tac-Toe/blob/master/tictactoe.html>Rejouer</a>");
+                    
                     return; // pour mettre fin au programme et l'empêcher de lacer les instructions suivantes
                 }
                 
